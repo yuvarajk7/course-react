@@ -1,0 +1,53 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "category": "Web Development",
+      "price": 1234,
+      "advanced": false,
+      "name": "Web Development Fundamentals - JavaScript"
+    },
+    {
+      "id": 2,
+      "category": "Web Development",
+      "price": 1234,
+      "advanced": true,
+      "name": "Developing Applications using ReactJS"
+    },
+    {
+      "id": 3,
+      "category": "Web Development",
+      "price": 1234,
+      "advanced": false,
+      "name": "Web Development Fundamentals - HTML/CSS"
+    },
+    {
+      "id": 4,
+      "category": "Project Management",
+      "price": 1234,
+      "advanced": false,
+      "name": "APM Project Fundamentals Qualification"
+    },
+    {
+      "id": 5,
+      "category": "Project Management",
+      "price": 1234,
+      "advanced": true,
+      "name": "APM Project Management Qualification"
+    },
+    {
+      "id": 6,
+      "category": "Project Management",
+      "price": 1234,
+      "advanced": false,
+      "name": "APM Project Fundamentals (eLearning) Qualification"
+    },
+    {
+      "name": "Beginnner C#",
+      "category": "Web Development",
+      "price": 100,
+      "advanced": true,
+      "id": 7
+    }
+  ]
+}
