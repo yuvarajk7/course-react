@@ -41,41 +41,6 @@
       "price": 1234,
       "advanced": false,
       "name": "APM Project Fundamentals (eLearning) Qualification"
-    },
-    {
-      "name": "Typescript",
-      "category": "Web Development",
-      "price": 300,
-      "advanced": true,
-      "id": 7
-    },
-    {
-      "name": "Beginnner C#",
-      "category": "Other",
-      "price": 240,
-      "advanced": true,
-      "id": 8
-    },
-    {
-      "name": "LabFirst",
-      "category": "Other",
-      "price": 20,
-      "advanced": false,
-      "id": 9
-    },
-    {
-      "name": "Kubernetes",
-      "category": "Other",
-      "price": 540,
-      "advanced": true,
-      "id": 10
-    },
-    {
-      "name": "Project Test",
-      "category": "Project Management",
-      "price": 300,
-      "advanced": false,
-      "id": 11
     }
   ]
 }

@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink, Routes, Route, Navigate } from 'react-router-dom'; //6.0 - Redirect to Navigate, Switch becomes Routes
+import { BrowserRouter as Router, NavLink, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import FilterableCoursesTable from './Components/FilterableCoursesTable3';
-import AddCourseForm from './Components/AddCourseForm';
+import AddCourseForm from './Components/AddCourseForm2';
 import Course from './Components/Course';
+import CoursesProvider from './StateManagement/CoursesProvider';
 
 function App() {
     return (
@@ -25,15 +26,23 @@ function App() {
                     </ul>
                 </nav>
             </header>
-            <Routes>
-                <Route path="/" exact element={<FilterableCoursesTable />} />
-                <Route path="/courses" element={<FilterableCoursesTable />} />
-                <Route path="/add" element={<AddCourseForm />} />
-                <Route path="*" element={<FilterableCoursesTable />}></Route>
-                {/*<Route>*/}
-                {/*    <Navigate to="/" />*/}
-                {/*</Route>*/}
-            </Routes>
+
+            <Switch>
+                <CoursesProvider>
+                    <Route path="/" exact>
+                        <FilterableCoursesTable />
+                    </Route>
+                    <Route path="/courses">
+                        <FilterableCoursesTable />
+                    </Route>
+                    <Route path="/add">
+                        <AddCourseForm />
+                    </Route>
+                </CoursesProvider>
+                <Route>
+                    <Redirect to="/" />
+                </Route>
+            </Switch>
         </Router>
     );
 }
