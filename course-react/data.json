@@ -41,13 +41,6 @@
       "price": 1234,
       "advanced": false,
       "name": "APM Project Fundamentals (eLearning) Qualification"
-    },
-    {
-      "name": "Beginnner C#",
-      "category": "Web Development",
-      "price": 100,
-      "advanced": true,
-      "id": 7
     }
   ]
 }

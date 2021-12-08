@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink, Routes, Route, Navigate } from 'react-router-dom'; //6.0 - Redirect to Navigate, Switch becomes Routes
 import './App.css';
-import FilterableCoursesTable from './Components/FilterableCoursesTable';
+import FilterableCoursesTable from './Components/FilterableCoursesTable3';
 import AddCourseForm from './Components/AddCourseForm';
+import Course from './Components/Course';
 
 function App() {
     return (
